@@ -1,0 +1,51 @@
+<html lang="en">
+   {% load static %}
+<head>
+  <title>Rano madio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'portfolio_making/style.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio_making/bootstrap.min.css' %}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+</nav>
+    <section class="banniere" id="banniere">
+        <div class="contenu">
+            <h2> la caza de la mer </h2>
+            <P class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugiat ipsa laudantium, minima eveniet architecto earum? Porro earum dolor mollitia in nulla excepturi perferendis sit qui pariatur, facere dolore nobis!</P>
+            <div class="content"><a href="{% url 'portfolio' %}" class="btn1">home</a>
+            <a href="#reserve" class="btn2"> continuez vos reservation</a>
+            </div>
+        </div>
+    </section>
+    <section class="aprops" id="apropos">
+        <div class="row">
+            <div class="hea">
+                <h3 class="titre"> <span>A</span>-propos de nous</h3>
+              <p class="text">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem animi, enim eum quidem perferendis natus. Nemo praesentium, ducimus reiciendis perspiciatis, amet aspernatur autem obcaecati necessitatibus quod, repellendus quam in.
+              </p>
+            </div>
+            <div class="head">
+               <div class="img">
+                  <img src="{% static 'portfolio_making/images/hotel.jpg' %}" alt="image">
+               </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="for" id="reserve">
+        <div class="reservation" >
+         <form  method="POST" class="form" style="padding-top:10px;" >
+            {% block content %}
+
+            {% endblock content %}
+        </form> 
+          
+
+      </section>
+    </body>
+    </html>

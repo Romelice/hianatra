@@ -1,0 +1,45 @@
+{% extends "portfolio/baseportfolio.html" %}
+{% load static %}
+<section class="form">
+
+
+{% block content %}
+
+
+<form class="form" method="POST" >
+ 
+        {% csrf_token %} 
+               <h1>{{message}}</h1>
+                <div class="reserveform" style="padding: 20px;">
+                        <h6 style="text-align: center; text-transform: uppercase;color:blueviolet "> Inscrivez-vous </h6>
+                      <div >
+                         <label for="nom" >Nom:</label><br>
+                         <input type="text" name="nom" placeholder="nom du client "><br> <br>
+                        </div>
+                        <div >
+                        <label for="nom" >Prenom:</label><br>
+                        <input type="text" name="prenom" placeholder="prenom du client"><br> <br>
+                        </div>
+                        <div >
+                        <label for="email" class="form-label">Email:</label><br>
+                        <input type="email" name="email" placeholder="email du client"><br> <br>
+                        </div>
+                        <div >
+                                <label for="adresse" class="form-label">Adresse:</label><br>
+                                <input type="text" name="adresse" placeholder="adresse du client"><br> <br>
+                        </div>
+                        <div >
+                                <label for="adresse" class="form-label">Message:</label><br>
+                                <textarea name="text" id=""></textarea> <br> <br>
+                        </div>
+                       
+                        <div>
+                                <button type="submit" >Enregistrés</button> <br> <br>
+                        </div>
+                       
+                </div>
+               
+</form> 
+       
+</section>
+{% endblock content %}

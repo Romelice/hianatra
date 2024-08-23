@@ -1,0 +1,148 @@
+<html lang="en">
+   {% load static %}
+<head>
+  <title>Rano madio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'portfolio_making/style.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio_making/bootstrap.min.css'%}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <span>Ran</span><span>o</span> madio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#banniere">A-propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#expert">Experts</a>  
+      </ul>
+    </div>
+  </div>
+</nav>
+    <section class="banniere" id="banniere">
+        <div class="contenu">
+            <h2> la caza de la mer </h2>
+            <P class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugiat ipsa laudantium, minima eveniet architecto earum? Porro earum dolor mollitia in nulla excepturi perferendis sit qui pariatur, facere dolore nobis!</P>
+            <div class="content"><a href="{% url 'home' %}" class="btn1">Home page</a>
+            <a href="{% url 'portfoliocreate' %}" class="btn2">  reservation</a>
+            </div>
+        </div>
+    </section>
+    <section class="aprops" id="apropos">
+        <div class="row">
+            <div class="hea">
+                <h3 class="titre"> <span>A</span>-propos de nous</h3>
+              <p class="text">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem animi, enim eum quidem perferendis natus. Nemo praesentium, ducimus reiciendis perspiciatis, amet aspernatur autem obcaecati necessitatibus quod, repellendus quam in.
+              </p>
+            </div>
+            <div class="head">
+               <div class="img">
+                  <img src="{% static 'portfolio_making/images/hotel.jpg' %}" alt="image">
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="raw">
+            <h4 class="tex"> <span>P</span>oduits</h4>
+            <p class="paru">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi culpa sed laboriosam inventore non sequi, nisi saepe nam rem aut dicta, praesentium ea rerum dolore recusandae nihil vel blanditiis quis.
+
+            </p>
+         </div> 
+           <div class="contu">
+            {% for pdt in portfolioProduit %}
+               <div  class="box">
+                  <div class="inbox">
+                     <img src="{{ pdt.image.url }}" alt="">
+                  </div>
+                  <div class="texte">
+                     <h5>{{pdt.nom}}</h5>
+                   </div>
+                </div>
+                {% endfor %}
+            </div> 
+        </div>
+        </section>
+<section class="service" id="service">
+      <div class="raw">
+          <h4 class="tex"> Nos <span>S</span>ervices</h4>
+          <p class="paru">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi culpa sed laboriosam inventore non sequi, nisi saepe nam rem aut dicta, praesentium ea rerum dolore recusandae nihil vel blanditiis quis.
+
+          </p>
+      </div>
+    
+         <div class="contu">
+          {% for pts in portfolioservice %}
+             <div  class="box"  >
+                <div class="inbox">
+                   <img src="{{pts.image.url}}" alt="">
+                </div>
+                <div class="texte">
+                   <h5>{{pts.nom }}</h5>
+                 </div>
+              </div>
+              {% endfor %}       
+          </div> 
+      </div>
+
+  
+  </section>
+  <section class="service" id="expert">
+    <div class="raw">
+        <h4 class="tex"> Nos <span>E</span>xperts</h4>
+        <p class="paru">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi culpa sed laboriosam inventore non sequi, nisi saepe nam rem aut dicta, praesentium ea rerum dolore recusandae nihil vel blanditiis quis.
+
+        </p>
+    </div>
+
+       <div class="contu">
+        {% for pte in porfolioexperts %}
+           <div  class="box">
+              <div class="inbox1">
+                 <img src="{{ pte.image.url }}" alt="">
+              </div>
+              <div class="texte">
+                 <h5 class="personne">{{ pte.nom }}</h5>
+               </div>
+               <div>
+                <p>{{pte.description}}</p>
+               </div>
+            </div>
+          {% endfor %}  
+        </div> 
+    </div>
+
+   
+</section>
+    <script src="{% static 'portfolio_making/bootstrap.bundle.min.js' %}">
+      
+    </script>
+
+    <section class="for" id="reserve">
+    <div class="reservation" >
+     <form  method="POST" class="form">
+        {% csrf_token %} 
+      <div class="contact">
+        </div>
+        <img src="{% static './portfolio_making/images/house_arch.jpg' %}" alt="">
+    </form> 
+  </section>
+</body>
+</html>

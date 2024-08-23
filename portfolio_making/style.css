@@ -1,0 +1,336 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif ;
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+p{
+    font-weight: 300;
+    color:rgb(125, 2, 136);
+
+}
+.navbar{
+    position: fixed;
+    top: 0%;
+    left:0%;
+    padding: 20px 50px;
+    width: 100% ;
+    z-index: 1 ;
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s; 
+}
+.container-fluid{
+    color: blue;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+.container-fluid span{
+color: #fb911f;
+font-size: 2em;
+list-style:armenian ;
+}
+.navbar{
+    display: flex;
+    position: relative;
+   
+    text-align: left;
+   
+}
+.navbar ul{
+    margin-right: 10px;
+    
+   
+}
+.navbar li{
+    list-style: none;
+ 
+ 
+}
+.navbar a{
+    color: rgb(1, 3, 14);
+    text-decoration: none;
+    margin-left:30px;
+    font-weight: 700;
+  
+}
+.btn-reserve{
+    padding: 10px 30px;
+    background:#fb911f ;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn-reserve:hover{
+background: #877108;
+transition: ease-out;
+}
+header.navbar li a:hover{
+    color:goldenrod;
+    border-bottom :2px solid orange ;
+    
+}
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(images/ocean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+}
+.banniere.contenu{
+    max-width: 100%;
+    text-align:center;
+}
+ .contenu h2{
+    color:rgb(11, 15, 238);
+    font-size: 2em; 
+    text-transform: capitalize;
+    text-align: center;
+    
+    
+
+}
+.contenu p:nth-child(2){
+    color: rgb(233, 236, 16);
+    font-size: 1.1em;
+   text-align: center; 
+   letter-spacing: 0.1em;
+   padding: 10px 20px;
+}
+.para{
+    text-align: center;
+    align-items: center;
+}
+.btn1{
+    font-size: 1em;
+    color: antiquewhite;
+    background: #fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 10pt;
+    transition: 0.5s;
+    margin-left: 10px;
+  align-items: center;
+
+}
+.btn2{
+    font-size: 1em;
+    color:black;
+    background: green;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 10pt;
+    transition: 0.5s;
+    margin-left: 10px;
+  align-items: center;
+}
+.content{
+    text-align: center;
+}
+.btn1:hover{
+    letter-spacing: 1px;
+}
+.btn2:hover{
+    letter-spacing: 2px;
+}
+.apropos{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hea{
+    position: relative;
+    width: 30%;
+    justify-content: center;
+    text-decoration: none;
+    padding: 25px 30px;
+    display: inline-block;
+}
+.hea h3{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
+.head{
+    display: inline-block;
+    text-align: center;
+    padding: 100px;
+    margin-top: 45px;
+    padding-left: 25px 30px;
+    position: relative;  
+    width: 300px;
+    height: 280px;
+    margin-top: 10px;
+    border: 20px   solid white;
+    box-shadow: 20px 15px 35px  black;
+    display:inline-block;
+    padding: 10px 10px ;
+
+}
+.head img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit:cover ;
+   position: center;
+   margin-right:20%;
+   display: inline-block;
+}
+.menu{
+    margin-top:-100px;
+}
+
+.contu{
+    display: inline-table;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-left: 20px;
+    text-align: center;
+}
+.box{
+    width: 300px;
+    height: 280px;
+    margin-top: 10px;
+    border: 20px   solid white;
+    box-shadow: 20px 15px 35px  black;
+    display:inline-block;
+    padding: 10px 10px ;
+}
+.inbox{
+    position: relative;
+    width: 270px;
+    height: 280px;
+    display: inline;
+   
+
+}
+.inbox img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit:cover ;
+   
+}
+.raw{
+    padding-top: 50px;
+}
+.raw span{
+    color: aqua;
+}
+.raw h4{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3em;
+}
+.raw p{
+    padding-top:50px;
+    text-align: center;
+    padding: 10px 20px;
+}
+.batton{
+   text-align: center;
+   display: inline-block;
+}
+.personne{
+    text-align: center;
+    color: black;
+}
+.bat{
+    text-align: center;
+    font-size: 1em;
+    color: antiquewhite;
+    background: #fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-left: 500px;
+  align-items: center;}
+  .mb-3{
+  
+    margin-top: 20px;
+  
+  }
+  .form{
+    width: 400px;
+    height: 680px;
+    box-shadow: 20px 15px 35px  black;
+    display:inline-block;
+    padding: 10px 10px ;
+    padding-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .reservation{
+    text-align:left;
+    padding-top: 30px;
+    color: white;
+  }
+  .for{
+    padding-top:50px;
+    background:url(./images/ocean2.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  .contact{
+    text-align: center;
+    text-transform: uppercase;
+    color: orangered;
+    padding-top: 20px;
+  }
+  .form-check-input{
+    color: rgb(245, 12, 82);
+
+  }
+  .inbox1{
+    position: relative;
+    width: 270px;
+    height: 280px;
+    display: inline;
+   
+
+}
+.inbox1 img{
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100px;
+    object-fit:cover ;
+    border-radius: 80%;
+}

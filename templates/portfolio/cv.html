@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>developpeur python</title>
+    <link rel="stylesheet" href="{% static 'portfolio_making/cv.css' %}">
+</head>
+<body>
+     <!--couverture-->
+    <div class="cover">
+      <img class="cover_profil" src="{% static 'portfolio_making/images/moi3.png'%}" alt="">
+     <h1>Romelice ANAFATRA </h1>
+      <h2>Freelance developer</h2> 
+      
+      <div style="text-align: center;">
+       <a class="contact-bouton" href="mailto:anafatraromelice@gmail.com?subject=contact%20depuis%20anafatraromelice.com"> MY CONTACT </a> 
+    </div>      
+       <!-- section gris 1-->
+        <div class="section-gris1">
+            <div class="separateur"></div> 
+        <p>As a full-stack developer, I provide end-to-end development services for your web projects or iOS/Android mobile applications. </p>
+        </div>
+       <!--section blanche-->
+       <div class="sectionblanche" >
+         <h3>ABOUTS</h3>
+        <img src="{% static 'portfolio_making/images/moi4.png' %}" class="col40" alt="">
+        <div class="col60 float-right">
+           
+           <div class="ligneverticale">
+            <p>
+                I've been passionate about computer science and web development since a young age.
+                 I've gained proficiency in various programming languages such as <b>Python</b>, <b>Django</b>,<b>JavaScript</b>, and <b> AngularJS</b>. 
+                I enjoy learning new technologies and constantly pushing my limits</p>
+                <h2> Languages: English French </h2>
+                <br> <br>En tant que développeur web dévoué, j'ai perfectionné mes compétences en <b>Python</b>, <b>Django</b>, <b>JavaScript</b> et <b> AngularJS</b>. Ma passion pour la technologie me pousse à explorer continuellement de nouveaux frameworks et les meilleures pratiques. Je suis déterminé à fournir des solutions web innovantes et efficaces .
+                <h2> languages: English French </h2>
+            </p>
+           </div> 
+            <p><b>More information about me</b>  <a style="padding-left:12px;" href="https://linkedin.com/in/romelice-anafatra-2a86b2273"> <b> click</b> </a></p>
+             <h3>PORTFOLIO</h3>
+               
+             <p style="text-align: center;" class="portfoliotext"><a href="{% url 'portfolio' %}"> Application web  pour la caza de la mer </a> </p>    
+            </div>
+        
+       </div>
+   
+        <div class="sectionblanche1">
+            
+            <div class="frame">
+                  <p class="titreframe"> <b>Could you tell me more about your project?</b> </p>                                                                                                                                                                                                                                                   
+                <table style="width: 100%;">
+                    <tr>
+                        <td valign="top" align="center"> <img src="{% static 'portfolio_making/images/moi3.png'%}" style="width: 100px;" alt=""></td>
+                        <td>
+                            
+                            <div  style="margin-left: 20px;" class="ligneverticale">If you would like to discuss your project and get my feedback, please feel free to 
+                             <a href="mailto:anafatraromelice@gmail.com?subject=contact%20depuis%20anafatraromelice.com"> <b>contact me via email</b></a>
+                            <p>  or <a href="https://linkedin.com/in/romelice-anafatra-2a86b2273"> <b>linkedin</b> </a></p></td>
+                       </div></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
